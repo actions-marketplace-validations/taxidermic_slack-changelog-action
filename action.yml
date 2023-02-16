@@ -1,0 +1,16 @@
+name: 'Slack Changelog Publisher'
+author: 'Anastasiia Kim'
+description: "Converts markdown to Slack's mrkdwn"
+inputs:
+  text-path:
+    description: 'Path to markdown text to convert'
+    required: true
+outputs:
+  text:
+    description: 'Converted Slack mrkdwn text'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'heart'
+  color: 'purple'
